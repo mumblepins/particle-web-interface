@@ -116,6 +116,12 @@ function getDevices(){
   });
 }
 
+function refreshInfo() {
+  $('#functions tbody').empty();
+  $('#variables tbody').empty();
+  getDevices();
+}
+
 function getDeviceInfo(deviceId) {
   jQuery.get(endpoint + '/v1/devices/' + deviceId, {
     'access_token': token

@@ -137,3 +137,7 @@ footer {
     -webkit-transform: scale(1.0);
   }
 }
+
+.btn-info {
+  margin-right: 10px;
+}
